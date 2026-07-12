@@ -1,0 +1,30 @@
+import transporter from "../config/mail.js";
+
+export const sendMessage = async (req,res) => {
+    const {name, email, message} = req.body;
+
+    //valodation
+    if(!name || !email || !message){
+        return res.status(400).json({
+            success:false,
+            message:"All fields are required"
+        })
+    }
+
+    try{
+      await transporter.sendMail({
+        from:email,
+        to:process.env.EMAIL_USER,
+        subject:"Portfolio contact form",
+        text:`
+        Name : ${name}
+        email : ${email}
+        message:${message}
+        `
+    });
+    return res.status(200).json({message:"Message sent successfully"})
+    }catch(error){
+       return res.status(500).json({message:"Failed to send message"})
+    }
+    
+};
