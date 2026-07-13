@@ -1,4 +1,4 @@
-import transporter from "../config/mail.js";
+import resend from "../config/resend";
 
 export const sendMessage = async (req,res) => {
     try{
@@ -12,20 +12,16 @@ export const sendMessage = async (req,res) => {
         })
     }
 
-    await transporter.verify();
-    console.log("SMTP verified")
-
-    //send mail
-    
-    await transporter.sendMail({
-        from:email,
+    await resend.emails.send({
+        from:"onboarding@resend.dev",
         to:process.env.EMAIL_USER,
         subject:"Portfolio contact form",
         text:`
         Name : ${name}
         email : ${email}
         message:${message}
-        `
+        `,
+        replyTo:email,
     });
     return res.status(200).json({message:"Message sent successfully"})
     }catch(error){
