@@ -1,4 +1,4 @@
-import resend from "../config/resend";
+import resend from "../config/resend.js";
 
 export const sendMessage = async (req,res) => {
     try{
