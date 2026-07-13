@@ -50,6 +50,7 @@ const Hero = () => {
                     ]}
                     speed={30}
                     repeat={Infinity}
+                    cursor={false}
                     className="text-green-600 text-2xl font-bold h-20"/>
                     </div>
                    
