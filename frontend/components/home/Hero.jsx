@@ -8,7 +8,7 @@ const Hero = () => {
 
   return (
     <>
-     <div className="bg-gray-900 h-[600px] md:h-auto  p-2 mb-12">
+     <div className="bg-gray-900 h-[600px] md:h-auto  p-2 mb-32 md:mb-5">
       <nav className=" z-100 bg-gray-900 flex items-center justify-between w-full py-4 px-6 md:px-16 lg:px-24 xl:px-40 text-sm relative">
                     <h1 className="w-50 text-5xl text-white font-extrabold my-1.5 ">Prabhath</h1>
                     
