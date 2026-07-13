@@ -1,9 +1,10 @@
 import transporter from "../config/mail.js";
 
 export const sendMessage = async (req,res) => {
+    try{
     const {name, email, message} = req.body;
 
-    //valodation
+    //validation
     if(!name || !email || !message){
         return res.status(400).json({
             success:false,
@@ -11,8 +12,12 @@ export const sendMessage = async (req,res) => {
         })
     }
 
-    try{
-      await transporter.sendMail({
+    await transporter.verify();
+    console.log("SMTP verified")
+
+    //send mail
+    
+    await transporter.sendMail({
         from:email,
         to:process.env.EMAIL_USER,
         subject:"Portfolio contact form",
