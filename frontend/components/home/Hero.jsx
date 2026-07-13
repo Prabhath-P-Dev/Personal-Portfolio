@@ -8,7 +8,7 @@ const Hero = () => {
 
   return (
     <>
-     <div className="bg-gray-900 h-[600px] md:h-auto  p-2">
+     <div className="bg-gray-900 h-[600px] md:h-auto  p-2 mb-5">
       <nav className=" z-100 bg-gray-900 flex items-center justify-between w-full py-4 px-6 md:px-16 lg:px-24 xl:px-40 text-sm relative">
                     <h1 className="w-50 text-5xl text-white font-extrabold my-1.5 ">Prabhath</h1>
                     
@@ -19,7 +19,7 @@ const Hero = () => {
                         <a href="#projects" className="hover:text-green-600 transition font-bold">Projects</a>
                         <a href="#cta" className="hover:text-green-600 transition font-bold">Contact</a>
                     </div>
-                     <button onClick={() => setIsOpen(prev=>!prev)} className="md:hidden active:scale-90 transition mr-0">
+                     <button onClick={() => setIsOpen(prev=>!prev)} className="md:hidden active:scale-90 transition mr-0 ">
                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" stroke="currentColor" strokeWidth="2" className="lucide lucide-menu" >
                             <path d="M4 5h16M4 12h16M4 19h16" />
                         </svg>
@@ -50,7 +50,7 @@ const Hero = () => {
                     ]}
                     speed={30}
                     repeat={Infinity}
-                    className="text-green-600 text-2xl font-bold "/>
+                    className="text-green-600 text-2xl font-bold h-20"/>
                     </div>
                    
                   
