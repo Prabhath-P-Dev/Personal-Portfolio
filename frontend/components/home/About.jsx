@@ -12,7 +12,7 @@ const About = () => {
                     <h1 className=" text-3xl md:text-5xl font-bold mb-2  text-blue-400">
                          ABOUT ME
                     </h1>
-                    <h3 className="flex text-xl font-bold mt-2 text-white  ">
+                    <h3 className="flex text-xl font-bold mt-2 text-white ml-2 ">
                     I'm a self-taught Full Stack developer passionate about building modern, <br /> responsive, and user-friendly web applications.<br></br> I enjoy turning ideas into real-world solutions. <br /> I continuously learn through hands-on projects and enjoy solving real-world problems with code. <br /> I'm eager to contribute, grow, and build impactful software as a full-stack developer.
                     </h3>
                 </div>
