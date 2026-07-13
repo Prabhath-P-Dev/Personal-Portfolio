@@ -45,7 +45,7 @@ const Contact = () => {
                     {/* Left Side */}
                     <div className="flex flex-col mt-10">
                         <p className="text-sm max-md:text-center font-medium text-green-600 uppercase mb-2">Get In Touch</p>
-                        <div className="flex flex-col items-center justify-center">
+                        <div className="flex flex-col items-center justify-center md:items-start">
                         <h1 className="text-5xl/14 max-md:text-center font-bold text-white max-w-2xs mb-0">Let's build something</h1>
                         <TypeAnimation
                           sequence={[
