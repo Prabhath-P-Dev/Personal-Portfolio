@@ -15,7 +15,7 @@ export const sendMessage = async (req,res) => {
     await resend.emails.send({
         from:"onboarding@resend.dev",
         to:process.env.EMAIL_USER,
-        subject:"Portfolio contact form",
+        subject:`Portfolio contact form - ${Date.now()}`,
         text:`
         Name : ${name}
         email : ${email}
