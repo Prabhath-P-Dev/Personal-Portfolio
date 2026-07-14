@@ -37,7 +37,7 @@ const Hero = () => {
                 <div className="px-10 pt-10 pb-2 gap-2 flex flex-col-reverse md:flex-row justify-between items-center">
                   <div className="px-4 text-center md:text-left ">
                     <h1 className="text-xl font-bold md:text-7xl text-white ">Hii,it's me <br />
-                   <span className="text-red-600 text-xl">Prabhath</span> 
+                   <span className="text-red-600 text-2xl">Prabhath</span> 
                   </h1>
                   <h2 className="py-2 font-bold text-lg md:text-2xl text-white">Full Stack Developer</h2>
                   <div className="h-5">
