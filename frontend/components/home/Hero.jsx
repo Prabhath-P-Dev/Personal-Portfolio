@@ -19,7 +19,7 @@ const Hero = () => {
                         <a href="#projects" className="hover:text-green-600 transition font-bold">Projects</a>
                         <a href="#cta" className="hover:text-green-600 transition font-bold">Contact</a>
                     </div>
-                     <button onClick={() => setIsOpen(prev=>!prev)} className="md:hidden active:scale-90 transition mr-0 ">
+                     <button onClick={() => setIsOpen(prev=>!prev)} className="md:hidden active:scale-90 transition mr-0 text-white ">
                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" stroke="currentColor" strokeWidth="2" className="lucide lucide-menu" >
                             <path d="M4 5h16M4 12h16M4 19h16" />
                         </svg>
@@ -36,19 +36,20 @@ const Hero = () => {
                 )}
                 <div className="px-10 pt-10 pb-2 gap-2 flex flex-col-reverse md:flex-row justify-between items-center">
                   <div className="px-4 text-center md:text-left ">
-                    <h1 className="text-4xl font-bold md:text-7xl text-white ">Hii, it's me <br />
-                    Prabhath
+                    <h1 className="text-4xl font-bold md:text-7xl text-white ">Hii,it's me <br />
+                   <span className="text-red-600">Prabhath</span> 
                   </h1>
                   <h2 className="py-2 font-bold text-xl md:text-2xl text-white">Full Stack Developer</h2>
                   <div className="h-5">
                   <TypeAnimation
                     sequence={[
                       "Bringing ideas to life through clean code and thoughtful design.",
-                      2000,
-                      "",
-                      500,
+                      1000,
+                      " Transforming code into engaging web experiences.",
+                      1000,
                     ]}
                     speed={30}
+                    deletionSpeed={60}
                     repeat={Infinity}
                     cursor={false}
                     className="text-green-600 text-xl font-bold h-20 md:text-2xl"/>
