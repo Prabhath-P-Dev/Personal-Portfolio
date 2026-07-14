@@ -28,17 +28,18 @@ const Contact = () => {
         try{
           const response = await api.post("/api/contact", formData);
           alert("message send successfully")
+          setFormData({...formData,
+           name:"",
+           email:"",
+           message:""
+        })
           setIsLoading(false)
         }catch(error){
             console.log(error)
             alert("failed to send message")
         }
         setIsLoading(false)
-        setFormData({
-         name:"",
-         email:"",
-         message:""
-        })
+        
     }
     return (
         <>
