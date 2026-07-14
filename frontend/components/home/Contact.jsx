@@ -34,6 +34,11 @@ const Contact = () => {
             alert("failed to send message")
         }
         setIsLoading(false)
+        setFormData({
+         name:"",
+         email:"",
+         message:""
+        })
     }
     return (
         <>
